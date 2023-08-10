@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lang="fr-FR"">
+<head>
+<title>Aquila</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel="alternate" type="application/rss+xml" title="Aquila &raquo; Flux" href="http://localhost:8082/wpproject/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Aquila &raquo; Flux des commentaires" href="http://localhost:8082/wpproject/comments/feed/" />
+<!-- <link rel='stylesheet' id='swagger-ui-css' href='http://localhost:8082/wpproject/wp-content/plugins/wp-api-swaggerui/assets/css/app.css?ver=789d1305ed98892b948d' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="//localhost:8082/wpproject/wp-content/cache/wpfc-minified/esys3acg/c47r6.css" media="all"/>
+<link rel="https://api.w.org/" href="http://localhost:8082/wpproject/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8082/wpproject/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8082/wpproject/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<meta name="generator" content="Elementor 3.15.0-dev6; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<style id="arrowpress-customizer-inline-styles"></style></head>
+<body>
+<div id="swagger-ui"></div>
+<script type='text/javascript'>
+const lazyloadRunObserver = () => {
+const dataAttribute = 'data-e-bg-lazyload';
+const lazyloadBackgrounds = document.querySelectorAll( `[${ dataAttribute }]:not(.lazyloaded)` );
+const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+entries.forEach( ( entry ) => {
+if ( entry.isIntersecting ) {
+let lazyloadBackground = entry.target;
+const lazyloadSelector = lazyloadBackground.getAttribute( dataAttribute );
+if ( lazyloadSelector ) {
+lazyloadBackground = entry.target.querySelector( lazyloadSelector );
+}
+if( lazyloadBackground ) {
+lazyloadBackground.classList.add( 'lazyloaded' );
+}
+lazyloadBackgroundObserver.unobserve( entry.target );
+}
+});
+}, { rootMargin: '100px 0px 100px 0px' } );
+lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+lazyloadBackgroundObserver.observe( lazyloadBackground );
+} );
+};
+const events = [
+'DOMContentLoaded',
+'elementor/lazyload/observe',
+];
+events.forEach( ( event ) => {
+document.addEventListener( event, lazyloadRunObserver );
+} );
+</script>
+<script id='swagger-ui-js-extra'>
+var swagger_ui_app = {"schema_url":"http:\/\/localhost:8082\/wpproject\/rest-api\/schema"};
+</script>
+<script src='http://localhost:8082/wpproject/wp-content/plugins/wp-api-swaggerui/assets/js/app.js?ver=0ec2eaf39c31095cdc0d' id='swagger-ui-js'></script>
+</body>
+</html><!-- WP Fastest Cache file was created in 19.954282999039 seconds, on 10-08-23 15:27:16 -->

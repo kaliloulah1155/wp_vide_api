@@ -1,0 +1,121 @@
+.heading-modern {
+    font-family: "Raleway";
+    .heading-title{
+        margin:0;
+        color: #333;
+        text-transform: capitalize;
+    }
+    p{
+        &.desc{
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: 0;
+            font-weight: 400;
+            color: #797476;
+            margin-top: 24px;
+            margin-#{$left}: auto;
+            margin-#{$right}: auto; 
+        }
+    }
+
+    &.heading-1 {
+        position: relative;
+        padding-top: 30px;
+        &.center{
+            .heading-title{
+                justify-content: center;
+                &:before{
+                    #{$left}: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .after-title{
+                text-align: center;
+            }
+            .desc{
+                text-align: center;
+            }
+        }
+        &.left{
+            .heading-title{
+                justify-content: #{$left};
+            }
+        }
+        
+        &.right{
+            .heading-title{
+                justify-content: flex-end;
+                &:before{
+                    #{$left}: auto;
+                    #{$right}: 0;
+                }
+            }
+            .after-title{
+                text-align: #{$right};
+            }
+            .desc{
+                text-align: #{$right};
+            }
+        } 
+        
+        .heading-title {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            min-height: 90px;
+            display: flex;
+            letter-spacing: 0.01em;
+            word-spacing: 0;
+            &:before{
+                content: '';
+                background-color: #c44860;
+                position: absolute;
+                bottom: 0;
+                #{$left}: 0;
+                #{$right}:auto;
+                height: 2px;
+                width: 53px;
+                z-index: 1;
+            }
+        }
+
+        .heading-title {
+            font-size:35px;
+            font-weight: 600;
+
+        }
+        .after-title{
+            font-size: 120px;
+            line-height: 50px;
+            min-height: 90px;
+            margin: -90px 0 0;
+            color: #f4f4f4;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-family: 'Sail';
+            position: relative;
+            text-align: $left;
+            span{
+                font-size: 150px;
+            }
+        }
+        .heading-title, span.after-title {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            min-height: 90px;
+            align-items: center;
+        }
+    }
+    &.heading-2{
+        .before-title{
+            font-weight: 600;
+        }
+        .heading-title{
+            font-weight: 300;
+        }
+        .heading-title{
+            font-size: 45px;
+        }
+    }
+}

@@ -1,51 +1,60 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found
+ * The template part for displaying a message that posts cannot be found
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Aquila
+ * @package aquila
  */
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-result not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'aquila' ); ?></h1>
-	</header><!-- .page-header -->
+		<h1 class="page-tile">
+			 <?php esc_html_e('Nothing Found','aquila'); ?>
+		</h1>
+	</header>
 
 	<div class="page-content">
 		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
-			printf(
-				'<p>' . wp_kses(
-					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'aquila' ),
-					array(
-						'a' => array(
-							'href' => array(),
+		   if(is_home() && current_user_can('publish_posts')) :
+
+			   ?>
+		         <p>
+					  <?php
+					  sprintf(
+					  	wp_kses(
+					  		__('Ready to publish your first post ? <a href="%s"> Get started here</a>','aquila'),
+							[
+								'a'=>[
+									'href'=>[]
+								]
+							]
 						),
-					)
-				) . '</p>',
-				esc_url( admin_url( 'post-new.php' ) )
-			);
+						  esc_url(admin_url('post-new.php'))
+					  )
+					  ?>
+				 </p>
+		        <?php
 
-		elseif ( is_search() ) :
-			?>
+		   elseif (is_search()):
+			   ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'aquila' ); ?></p>
-			<?php
-			get_search_form();
+		       <p>
+				   <?php esc_html_e('Sorry but nothing matched your search item. Please try again with your different keywords','aquila'); ?>
+			   </p>
+		      <?php
+			   get_search_form();
+			else:
+				   ?>
 
-		else :
-			?>
+				   <p>
+					   <?php esc_html_e('It seems that we cannot find what your are looking for. Perhaps search can help you. ','aquila'); ?>
+				   </p>
+				   <?php
+				   get_search_form();
+		    endif
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'aquila' ); ?></p>
-			<?php
-			get_search_form();
-
-		endif;
 		?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div>
+</section>

@@ -1,0 +1,221 @@
+
+<?php
+	$footer_layout = Arangi::setting('footer_layout');
+	$show_newsletter = Arangi::setting('show_newsletter');
+	$show_payment = Arangi::setting('show_payment');
+	$footer_04_show_newsletter = Arangi::setting('footer_04_show_newsletter');
+	$newsletter_title = Arangi::setting( 'newsletter_title' );
+	$newsletter_title2 = Arangi::setting( 'newsletter_title2' );
+	$newsletter_after_title = Arangi::setting( 'newsletter_after_title' );
+	$newsletter_desc = Arangi::setting( 'newsletter_desc' );
+	$newsletter_desc2 = Arangi::setting( 'newsletter_desc2' );
+	$text_privacy = Arangi::setting( 'text_privacy' );
+	$show_social = Arangi::setting('footer_show_social');
+	$newsletter_tyle = Arangi::setting('newsletter_tyle');
+	$hide_newsletter_footer_page = get_post_meta(get_the_ID(), 'hide_newsletter_footer', true);
+	$newsletter_type_page = get_post_meta(get_the_ID(), 'newsletter_type', true);
+	$f_hide_newsletter_class ="";
+	if($hide_newsletter_footer_page){
+		$f_hide_newsletter_class = 'hide_newsletter';
+	}
+  	if ($footer_layout === 'wide'){
+    	$f_container ='container-fluid';
+	}elseif ($footer_layout === 'full_width'){
+	    $f_container ='container';
+	}else{
+	    $f_container ='container-fluid boxed';
+	}
+	$animation_blog = Arangi::setting( 'blog_css_animation' );
+	$animation_product = Arangi::setting( 'blog_css_animation' );
+	$animation_delay = Arangi::setting( 'animation_delay' );
+	$top_img = Arangi::setting( 'top_img' );
+	$bottom_img = Arangi::setting( 'bottom_img' );
+	$animation_blog_class = Arangi_Helper::get_animation_classes( $animation_blog ); 
+	$animation_product_class = Arangi_Helper::get_animation_classes( $animation_product ); 
+?>
+<footer id="page-footer" <?php Arangi::footer_class(); ?>>
+	<div id="page-footer-inner" class="page-footer-inner <?php echo esc_attr($f_hide_newsletter_class); ?>" data-sticky="1">
+		<div class="<?php echo esc_attr( $f_container ); ?>">
+			<div class="row hiden-tablet">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="top-img"><img src="<?php echo esc_url($top_img); ?>" alt=""/></div>
+				</div>
+			</div>
+			<div class="row row-bg">
+				<div class="col-xl-2 col-lg-1 col-md-1 col-sm-12">
+				</div>
+				<div class="col-xl-8 col-lg-10 col-md-10 col-sm-12">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<?php if($footer_04_show_newsletter)  {
+								if($show_newsletter) {
+									if (is_active_sidebar('footer-newsletter')) {
+									?> 
+									<div class="footer-newsletter <?php if(($newsletter_tyle === 'style1'|| $newsletter_type_page ==='newsletter_01') && $newsletter_type_page !=='newsletter_02'){ echo 'newsletter-style1';}?> <?php if(($newsletter_tyle === 'style2'|| $newsletter_type_page ==='newsletter_02') && $newsletter_type_page !=='newsletter_01'){ echo 'newsletter-style2';}?>">
+										<div class="newletter-form">
+											<div class="newsletter-heading">
+												<div class="newsletter_title">
+													<?php if($newsletter_title !== '' && ($newsletter_tyle === 'style1'|| $newsletter_type_page === 'newsletter_01') && $newsletter_type_page !== 'newsletter_02'): ?>
+														<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>
+															<h2><?php echo esc_html__('Our Newsletter','arangi'); ?></h2>
+														<?php else :?> 
+															<h2><?php echo wp_kses_post($newsletter_title); ?></h2>
+														<?php endif;?>
+													<?php endif;?>		
+													<?php if($newsletter_title2 !== '' && ($newsletter_tyle === 'style2'||$newsletter_type_page ==='newsletter_02') && $newsletter_type_page !== 'newsletter_01'): ?>
+														<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>	
+															<h2><?php echo esc_html__('Sign Up&nbsp;','arangi') . '<span>'. esc_html__('Newsletter','arangi') .'</span>'; ?></h2>
+														<?php else:?>
+															<h2><?php echo wp_kses_post($newsletter_title2); ?></h2>
+														<?php endif;?>
+													<?php endif;?>
+													<?php if($newsletter_after_title !== '' && ($newsletter_tyle === 'style1'|| $newsletter_type_page === 'newsletter_01') && $newsletter_type_page !== 'newsletter_02'): ?>
+														<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>
+															<p class="title-after"><?php echo esc_html__('Arangi','arangi'); ?></p>
+														<?php else :?>
+															<p class="title-after"><?php echo wp_kses_post($newsletter_after_title); ?></p>
+														<?php endif;?>
+													<?php endif;?>
+												</div>
+												<?php if($newsletter_desc !== '' && ($newsletter_tyle === 'style1'|| $newsletter_type_page === 'newsletter_01') && $newsletter_type_page !== 'newsletter_02'): ?>
+													<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>
+														<p class="newletter-desc"><?php echo esc_html__( 'Don&rsquo;t miss any update', 'arangi' ) ?></p>
+													<?php else:?>
+														<p class="newletter-desc"><?php echo wp_kses_post($newsletter_desc); ?></p>
+													<?php endif;?>
+												<?php endif;?>
+												<?php if($newsletter_desc2 !== '' && ($newsletter_tyle === 'style2'||$newsletter_type_page ==='newsletter_02') && $newsletter_type_page !== 'newsletter_01'): ?>
+													<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>
+														<p class="newletter-desc"><?php echo esc_html__( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text.', 'arangi' ) ?></p>
+													<?php else:?>
+														<p class="newletter-desc"><?php echo wp_kses_post($newsletter_desc2); ?></p>
+													<?php endif;?>
+												<?php endif;?>
+											</div>
+											<div class="footer-mailchimp">
+												<?php dynamic_sidebar('footer-newsletter'); ?>
+												<?php if($show_social && ($newsletter_tyle === 'style1'|| $newsletter_type_page === 'newsletter_01') && $newsletter_type_page !== 'newsletter_02'){?>
+													<div class="social-footer social-footer-style1">
+														<button id="btn-show-social"><span class="ti-angle-right"></span></button>
+														<?php Arangi_Templates::social_icons(); ?>
+													</div>
+												<?php }?>
+											</div>
+										</div>
+										<?php if($text_privacy !== '' && ($newsletter_tyle === 'style2'||$newsletter_type_page ==='newsletter_02') && $newsletter_type_page !== 'newsletter_01'): ?>
+											<?php if((in_array('sitepress-multilingual-cms/sitepress.php', apply_filters('active_plugins', get_option('active_plugins')))) && function_exists('icl_object_id') ): ?>
+													<div class="text-privacy"><?php echo esc_html__('By signing up you agree our','arangi') .'<a href="#">' . esc_html__( '&nbsp;Term & Services', 'arangi') . '</a>' ?></div>
+												<?php else:?>
+													<div class="text-privacy"><?php echo wp_kses_post($text_privacy); ?></div>
+												<?php endif; ?>
+											<?php endif; ?>
+										<?php if($show_social && ($newsletter_tyle === 'style2'||$newsletter_type_page ==='newsletter_02') && $newsletter_type_page !== 'newsletter_01'){?>
+											<div class="social-footer social-footer-style2">
+												<?php Arangi_Templates::social_icons(); ?>
+											</div>
+										<?php }?>
+									</div>
+									<?php
+									}
+								}
+							}?>
+						</div>
+						<?php
+							$cols = 0;
+							for ($i = 1; $i <= 5; $i++) {
+								if (is_active_sidebar('footer4-column-' . $i)){?>
+									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 footer-midde">
+										<?php
+											$cols = 0;
+											for ($i = 1; $i <= 5; $i++) {
+												if (is_active_sidebar('footer4-column-' . $i))
+													$cols++;
+											}
+										?>
+										<?php
+										if ($cols) :
+											$col_class = array();
+											switch ($cols) {
+												case 1:
+													$col_class[1] = 'col-sm-12';
+													break;
+												case 2:
+													$col_class[1] = 'col-sm-6 col-xs-6 col-md-6';
+													$col_class[2] = 'col-sm-6 col-xs-6 col-md-6';
+													break;
+												case 3:
+													$col_class[1] = 'col-xs-12 col-sm-4 col-md-4';
+													$col_class[2] = 'col-xs-12 col-sm-4 col-md-4';
+													$col_class[3] = 'col-xs-12 col-sm-4 col-md-4';
+													break;
+												case 4:
+													$col_class[1] = 'col-xs-12 col-sm-6 col-md-3 col-lg-3';
+													$col_class[2] = 'col-xs-12 col-sm-6 col-md-3 col-lg-3';
+													$col_class[3] = 'col-xs-12 col-sm-6 col-md-3 col-lg-3';
+													$col_class[4] = 'col-xs-12 col-sm-6 col-md-3 col-lg-3';
+													break;
+												case 5:
+													$col_class[1] = 'col-xs-12 col-sm-12 col-md-12 col-lg-4';
+													$col_class[2] = 'col-xs-12 col-sm-6 col-md-3 col-lg-2';
+													$col_class[3] = 'col-xs-12 col-sm-6 col-md-3 col-lg-2';
+													$col_class[4] = 'col-xs-12 col-sm-6 col-md-3 col-lg-2';
+													$col_class[5] = 'col-xs-12 col-sm-6 col-md-3 col-lg-2';
+													break;
+											}
+											?>
+										<div class="row">
+											<?php
+											$cols = 1;
+											for ($i = 1; $i <= 5; $i++) {
+												if (is_active_sidebar('footer4-column-' . $i)) {
+													?>
+													<div class="<?php echo esc_attr($col_class[$cols++]) ?>">
+														<?php dynamic_sidebar('footer4-column-' . $i); ?>
+													</div>
+													<?php
+												}
+											}
+											?>
+										</div>
+										<?php endif; ?>
+									</div>
+								<?php
+								}
+							}
+						?>	
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+									<div class="border-line"></div>
+								</div>
+								<div class="<?php if($show_payment) {
+									echo esc_attr('col-md-6 col-sm-12 col-xs-12 copy-right');
+								} else {
+									echo esc_attr('col-md-12 col-sm-12 col-xs-12 copy-right text-center');
+								} ?>">
+									<div class="copyright-content">
+										<?php echo  Arangi::setting( 'footer_copyright' ); ?>
+									</div>	
+								</div>
+								<?php if($show_payment) {?>
+								<div class="col-md-6 col-sm-12 col-xs-12 text-right">
+									<div class="payment">
+										<?php Arangi_Templates::payment_links(); ?>
+									</div>
+								</div>
+								<?php } ?>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-1 col-md-1 col-sm-12">
+				</div>
+			</div>
+			<div class="row hiden-tablet">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+					<div class="bottom-img"><img src="<?php echo esc_url($bottom_img); ?>" alt=""/></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

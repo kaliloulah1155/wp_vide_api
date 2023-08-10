@@ -1,0 +1,38 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+$rtl: 1;
+$dir: rtl !default;
+$text_color: #948e90;
+$font-default: 'Domine';
+$font_heading : 'Raleway';
+$primary_color : #c44860;
+$highlight_color : #f4ae7b;
+
+@font-face {
+	font-family: 'Papa Bear';
+	src: url('../webfonts/PapaBear.eot');
+	src: local('☺'), url('../webfonts/PapaBear.woff') format('woff'), url('../webfonts/PapaBear.ttf') format('truetype'), url('../webfonts/PapaBear.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import "theme/directional";
+@import "theme/reset-style";
+@import "theme/style-guide";
+@import "theme/base/header";
+@import "theme/base/header-responsive";
+@import "theme/base/megamenu";
+@import "theme/base/footer";
+@import "theme/base/widgets";
+
+@import "theme/content/product";
+@import "theme/content/single-product";
+@import "theme/content/blog";
+@import "theme/content/cart";
+@import "theme/content/error-pages";
+@import "theme/content/content_rtl";  
+@import "theme/content/shipping";
+@import "theme/content/other-pages";
+@import "theme/content/home-pages";
+@import "theme/content/responsive";

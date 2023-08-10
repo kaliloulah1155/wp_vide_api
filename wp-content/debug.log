@@ -99,3 +99,802 @@
 [28-Jul-2023 13:56:26 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
 [28-Jul-2023 13:56:31 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
 [28-Jul-2023 15:49:10 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 16:14:57 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 17:04:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function et_template_directory_uri() in C:\laragon\www\wpproject\wp-content\themes\aquila\functions.php:25
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(308): aquila_enqueue_scripts('')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\laragon\www\wpproject\wp-includes\script-loader.php(2194): do_action('wp_enqueue_scri...')
+#4 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(308): wp_enqueue_scripts('')
+#5 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\laragon\www\wpproject\wp-includes\general-template.php(3049): do_action('wp_head')
+#8 C:\laragon\www\wpproject\wp-content\themes\aquila\header.php(19): wp_head()
+#9 C:\laragon\www\wpproject\wp-includes\template.php(783): require_once('C:\\laragon\\www\\...')
+#10 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', true, Array)
+#11 C:\laragon\www\wpproject\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(15): get_header()
+#13 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#14 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#15 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#16 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\functions.php on line 25
+[28-Jul-2023 17:40:53 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_template_part(), 0 passed in C:\laragon\www\wpproject\wp-content\themes\aquila\header.php on line 31 and at least 1 expected in C:\laragon\www\wpproject\wp-includes\general-template.php:167
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\header.php(31): get_template_part()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(783): require_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', true, Array)
+#3 C:\laragon\www\wpproject\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(15): get_header()
+#5 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#7 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\general-template.php on line 167
+[28-Jul-2023 22:40:05 UTC] PHP Fatal error:  Uncaught TypeError: spl_autoload_register(): Argument #1 ($callback) must be a valid callback or null, function "\AQUILA_THEME\Inc\Helpers\autoloader" not found or invalid function name in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\autoloader.php:87
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\autoloader.php(87): spl_autoload_register('\\AQUILA_THEME\\I...')
+#1 C:\laragon\www\wpproject\wp-content\themes\aquila\functions.php(15): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wpproject\wp-settings.php(591): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wpproject\wp-config.php(100): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\wpproject\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\autoloader.php on line 87
+[28-Jul-2023 23:34:24 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[28-Jul-2023 23:34:35 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 23:41:29 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 23:44:41 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 23:45:38 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[28-Jul-2023 23:52:31 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 04:15:52 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[29-Jul-2023 04:15:58 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[29-Jul-2023 04:15:59 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[29-Jul-2023 04:22:21 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 04:22:36 UTC] Erreur d’événement de déplanification de tâche pour le crochet members_admin_notifications_update. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":false,"args":[]}
+[29-Jul-2023 04:29:31 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 05:33:38 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-aquila-theme.php on line 46
+[29-Jul-2023 05:33:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[29-Jul-2023 05:33:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[29-Jul-2023 05:53:29 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[29-Jul-2023 06:02:41 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 29 and exactly 2 expected in C:\laragon\www\wpproject\wp-includes\nav-menu.php:136
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php(29): register_nav_menu(Array)
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(308): Aquila\Inc\Menus->register_menus('')
+#2 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\laragon\www\wpproject\wp-settings.php(623): do_action('init')
+#5 C:\laragon\www\wpproject\wp-config.php(100): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#7 C:\laragon\www\wpproject\wp-admin\admin-ajax.php(22): require_once('C:\\laragon\\www\\...')
+#8 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\nav-menu.php on line 136
+[29-Jul-2023 06:02:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function register_nav_menu(), 1 passed in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 29 and exactly 2 expected in C:\laragon\www\wpproject\wp-includes\nav-menu.php:136
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php(29): register_nav_menu(Array)
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(308): Aquila\Inc\Menus->register_menus('')
+#2 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\laragon\www\wpproject\wp-settings.php(623): do_action('init')
+#5 C:\laragon\www\wpproject\wp-config.php(100): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#7 C:\laragon\www\wpproject\wp-admin\admin.php(34): require_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\wpproject\wp-admin\themes.php(10): require_once('C:\\laragon\\www\\...')
+#9 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\nav-menu.php on line 136
+[29-Jul-2023 06:07:41 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 06:10:59 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_fastest_cache_Preload. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"everyfiveminute","args":[],"interval":300}
+[29-Jul-2023 06:24:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:24:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:24:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:24:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:24:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:24:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:25:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:25:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:25:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 06:25:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 08:57:31 UTC] PHP Warning:  require(28): Failed to open stream: No such file or directory in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 08:57:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '28' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php:40
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\header\nav.php(14): Aquila\Inc\Menus->get_menu_id('aquila-header-m...')
+#1 C:\laragon\www\wpproject\wp-includes\template.php(785): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#3 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\laragon\www\wpproject\wp-content\themes\aquila\header.php(31): get_template_part('template-parts/...')
+#5 C:\laragon\www\wpproject\wp-includes\template.php(783): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', true, Array)
+#7 C:\laragon\www\wpproject\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(15): get_header()
+#9 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#10 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#11 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#12 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 08:59:20 UTC] PHP Warning:  require(28): Failed to open stream: No such file or directory in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 08:59:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '28' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php:40
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\header\nav.php(14): Aquila\Inc\Menus->get_menu_id('aquila-header-m...')
+#1 C:\laragon\www\wpproject\wp-includes\template.php(785): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#3 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\laragon\www\wpproject\wp-content\themes\aquila\header.php(31): get_template_part('template-parts/...')
+#5 C:\laragon\www\wpproject\wp-includes\template.php(783): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', true, Array)
+#7 C:\laragon\www\wpproject\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(15): get_header()
+#9 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#10 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#11 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#12 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 09:00:04 UTC] PHP Warning:  require(28): Failed to open stream: No such file or directory in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 09:00:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '28' (include_path='.;C:/laragon/etc/php/pear') in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php:40
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\header\nav.php(14): Aquila\Inc\Menus->get_menu_id('aquila-header-m...')
+#1 C:\laragon\www\wpproject\wp-includes\template.php(785): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#3 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\laragon\www\wpproject\wp-content\themes\aquila\header.php(31): get_template_part('template-parts/...')
+#5 C:\laragon\www\wpproject\wp-includes\template.php(783): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', true, Array)
+#7 C:\laragon\www\wpproject\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(15): get_header()
+#9 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#10 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#11 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#12 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-menus.php on line 40
+[29-Jul-2023 09:24:20 UTC] PHP Parse error:  syntax error, unexpected token "echo" in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\header\nav.php on line 45
+[29-Jul-2023 09:41:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 12:04:13 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:29:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 12:29:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 12:29:32 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:35:36 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:39:40 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:40:34 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:45:42 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:46:20 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[29-Jul-2023 12:46:44 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 12:48:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php:17
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content-page.php on line 17
+[29-Jul-2023 12:59:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aquila_post_thumbnail() in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content.php:32
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\template.php(785): require()
+#1 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#2 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\laragon\www\wpproject\wp-content\themes\aquila\page.php(24): get_template_part('template-parts/...', 'page')
+#4 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content.php on line 32
+[29-Jul-2023 14:31:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[29-Jul-2023 14:31:52 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[29-Jul-2023 14:31:54 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[29-Jul-2023 14:34:18 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[30-Jul-2023 12:03:02 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[30-Jul-2023 12:03:02 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[30-Jul-2023 12:03:10 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[30-Jul-2023 12:03:10 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[30-Jul-2023 12:03:15 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[30-Jul-2023 12:03:15 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[30-Jul-2023 12:58:57 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[30-Jul-2023 14:33:06 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[30-Jul-2023 14:33:11 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[30-Jul-2023 14:33:12 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[30-Jul-2023 16:51:44 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 16:51:51 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:04:29 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:12:22 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:15:44 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:17:24 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:17:32 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 17:22:01 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[30-Jul-2023 18:21:52 UTC] Erreur d’événement de déplanification de tâche pour le crochet members_admin_notifications_update. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":false,"args":[]}
+[31-Jul-2023 00:24:24 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-meta-boxes.php on line 67
+[31-Jul-2023 00:24:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[31-Jul-2023 00:24:24 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 39
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 39
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 40
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 40
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 41
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 41
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 42
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 42
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 43
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 43
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 44
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 44
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 45
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 45
+[31-Jul-2023 12:55:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\breadcrumb.php on line 53
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:55:48 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:56:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:56:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:56:54 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:57:16 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 39
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 39
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 40
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 40
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 41
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 41
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 42
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 42
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 43
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 43
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 44
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 44
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 45
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\inc\class-custom-style.php on line 45
+[31-Jul-2023 12:57:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\laragon\www\wpproject\wp-content\themes\arangi\breadcrumb.php on line 53
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 1596
+[31-Jul-2023 12:57:28 UTC] PHP Deprecated:  strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2259
+[31-Jul-2023 12:57:46 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:57:55 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:00 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:12 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:17 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:27 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:58:52 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 12:59:01 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:02:41 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:02:44 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:02:51 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:02:53 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:06:45 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:06:59 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:06 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:23 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:28 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:32 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:37 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:41 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:07:52 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:08:06 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:08:32 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:09:06 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:09:19 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:09:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:09:26 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:09:40 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:10:06 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:21 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:25 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:30 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:34 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:36 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:10:57 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:11:09 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[31-Jul-2023 13:28:55 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:30:48 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:31:00 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:31:22 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:31:34 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:32:57 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:03 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:07 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:10 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:11 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:15 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 13:33:29 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[31-Jul-2023 15:39:33 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[31-Jul-2023 15:59:05 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[31-Jul-2023 16:02:05 UTC] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-meta-boxes.php:80
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(310): Aquila\Inc\Meta_Boxes->save_post_meta_data(155)
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(155, Array)
+#2 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\laragon\www\wpproject\wp-includes\post.php(4715): do_action('save_post', 155, Object(WP_Post), true)
+#4 C:\laragon\www\wpproject\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#5 C:\laragon\www\wpproject\wp-admin\includes\post.php(439): wp_update_post(Array)
+#6 C:\laragon\www\wpproject\wp-admin\post.php(227): edit_post()
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-meta-boxes.php on line 80
+[31-Jul-2023 16:02:18 UTC] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-meta-boxes.php:80
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(310): Aquila\Inc\Meta_Boxes->save_post_meta_data(155)
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(155, Array)
+#2 C:\laragon\www\wpproject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\laragon\www\wpproject\wp-includes\post.php(4715): do_action('save_post', 155, Object(WP_Post), true)
+#4 C:\laragon\www\wpproject\wp-includes\post.php(4817): wp_insert_post(Array, false, true)
+#5 C:\laragon\www\wpproject\wp-admin\includes\post.php(439): wp_update_post(Array)
+#6 C:\laragon\www\wpproject\wp-admin\post.php(227): edit_post()
+#7 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-meta-boxes.php on line 80
+[01-Aug-2023 14:04:26 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_timeout_f85557f46ec8771317a94355646434b1' made by do_action_ref_array('wp_version_check'), WP_Hook->do_action, WP_Hook->apply_filters, wp_version_check, do_action('wp_maybe_auto_update'), WP_Hook->do_action, WP_Hook->apply_filters, wp_maybe_auto_update, WP_Automatic_Updater->run, wp_update_plugins, set_site_transient, apply_filters('pre_set_site_transient_update_plugins'), WP_Hook->apply_filters, ElementorBeta\Modules\DeveloperEdition\Core_Version_Control->pre_set_site_transient_update_plugins, ElementorBeta\Modules\DeveloperEdition\Core_Version_Control->get_latest_dev_release, ElementorBeta\Modules\DeveloperEdition\Core_Version_Control->get_latest_release_by_channel, ElementorBeta\Modules\DeveloperEdition\Core_Version_Control->get_wp_org_data, get_site_transient, delete_site_option, delete_network_option, delete_option
+[01-Aug-2023 17:26:39 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[04-Aug-2023 14:13:29 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[04-Aug-2023 14:13:29 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[04-Aug-2023 14:13:54 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[04-Aug-2023 14:14:05 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[04-Aug-2023 14:14:08 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[04-Aug-2023 14:15:55 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[04-Aug-2023 14:28:16 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php on line 35
+[04-Aug-2023 14:28:18 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[04-Aug-2023 14:28:18 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\laragon\www\wpproject\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[04-Aug-2023 14:28:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php on line 35
+[04-Aug-2023 14:32:12 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[04-Aug-2023 14:35:06 UTC] PHP Parse error:  syntax error, unexpected token ")" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php on line 35
+[04-Aug-2023 14:53:49 UTC] PHP Fatal error:  Uncaught ArgumentCountError: 5 arguments are required, 3 given in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php:44
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php(44): printf('<time class="en...', '2023-07-30T16:4...', '30 juillet 2023')
+#1 C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\components\blog\entry-meta.php(12): aquila_post_on()
+#2 C:\laragon\www\wpproject\wp-includes\template.php(785): require('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#4 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#5 C:\laragon\www\wpproject\wp-content\themes\aquila\template-parts\content.php(13): get_template_part('template-parts/...')
+#6 C:\laragon\www\wpproject\wp-includes\template.php(785): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\wpproject\wp-includes\template.php(718): load_template('C:\\laragon\\www\\...', false, Array)
+#8 C:\laragon\www\wpproject\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#9 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(43): get_template_part('template-parts/...')
+#10 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#11 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#12 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#13 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php on line 44
+[04-Aug-2023 16:28:47 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[04-Aug-2023 16:29:26 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[04-Aug-2023 16:29:28 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[05-Aug-2023 03:46:30 UTC] PHP Warning:  Array to string conversion in C:\laragon\www\wpproject\wp-includes\functions.php on line 3919
+[05-Aug-2023 03:55:38 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[05-Aug-2023 03:55:49 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[05-Aug-2023 03:59:02 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[05-Aug-2023 03:59:14 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[05-Aug-2023 03:59:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 08:36:36 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 209
+[07-Aug-2023 08:36:39 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[07-Aug-2023 08:36:39 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\translation-install.php on line 68
+[07-Aug-2023 08:36:42 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[07-Aug-2023 08:36:48 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[07-Aug-2023 08:37:17 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 11:09:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 11:13:55 UTC] PHP Fatal error:  Uncaught ArgumentCountError: next() expects exactly 1 argument, 0 given in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php:98
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php(98): next()
+#1 C:\laragon\www\wpproject\wp-content\themes\aquila\index.php(59): aquila_pagination()
+#2 C:\laragon\www\wpproject\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wpproject\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#4 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#5 {main}
+  thrown in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\helpers\template-tags.php on line 98
+[07-Aug-2023 11:26:52 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:27:54 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:28:56 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:31:27 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:35:53 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:36:58 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:38:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_kses_no_null() in C:\laragon\www\wpproject\wp-includes\kses.php:752
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-admin\includes\plugin.php(183): wp_kses('ArrowPress Core', Array)
+#1 C:\laragon\www\wpproject\wp-admin\includes\plugin.php(111): _get_plugin_data_markup_translate('arrowpress-core...', Array, true, true)
+#2 C:\laragon\www\wpproject\wp-content\plugins\arrowpress-core\arrowpress-core.php(133): get_plugin_data('C:\\laragon\\www\\...')
+#3 C:\laragon\www\wpproject\wp-content\plugins\arrowpress-core\arrowpress-core.php(109): Apr_Core->define_constants()
+#4 C:\laragon\www\wpproject\wp-content\plugins\arrowpress-core\arrowpress-core.php(79): Apr_Core->init()
+#5 C:\laragon\www\wpproject\wp-content\plugins\arrowpress-core\arrowpress-core.php(67): Apr_Core->__construct()
+#6 C:\laragon\www\wpproject\wp-content\plugins\arrowpress-core\arrowpress-core.php(362): Apr_Core::instance()
+#7 C:\laragon\www\wpproject\wp-settings.php(453): include_once('C:\\laragon\\www\\...')
+#8 C:\laragon\www\wpproject\wp-config.php(100): require_once('C:\\laragon\\www\\...')
+#9 C:\laragon\www\wpproject\wp-load.php(50): require_once('C:\\laragon\\www\\...')
+#10 C:\laragon\www\wpproject\wp-blog-header.php(13): require_once('C:\\laragon\\www\\...')
+#11 C:\laragon\www\wpproject\index.php(17): require('C:\\laragon\\www\\...')
+#12 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\kses.php on line 752
+[07-Aug-2023 11:38:15 UTC] PHP Notice:  La fonction is_embed a été appelée de façon <strong>incorrecte</strong>. Les balises de requête conditionnelle ne fonctionnent pas avant le lancement de la requête. Avant cela, elles renvoient toujours le booléen <code>false</code>. Veuillez lire <a href="https://fr.wordpress.org/support/article/debugging-in-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.1.0.) in C:\laragon\www\wpproject\wp-includes\functions.php on line 5865
+[07-Aug-2023 11:38:15 UTC] PHP Notice:  La fonction is_search a été appelée de façon <strong>incorrecte</strong>. Les balises de requête conditionnelle ne fonctionnent pas avant le lancement de la requête. Avant cela, elles renvoient toujours le booléen <code>false</code>. Veuillez lire <a href="https://fr.wordpress.org/support/article/debugging-in-wordpress/">Débogage dans WordPress</a> (en) pour plus d’informations. (Ce message a été ajouté à la version 3.1.0.) in C:\laragon\www\wpproject\wp-includes\functions.php on line 5865
+[07-Aug-2023 11:38:38 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:40:06 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:45:58 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:49:40 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\laragon\www\wpproject\wp-includes\kses.php on line 1729
+[07-Aug-2023 11:49:58 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 11:50:01 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 11:51:17 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 11:51:31 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 11:51:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\plugin-install.php on line 183
+[07-Aug-2023 11:51:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-admin\includes\plugin-install.php on line 183
+[07-Aug-2023 12:33:42 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 728
+[07-Aug-2023 12:34:03 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 12:34:22 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 12:35:58 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 12:36:04 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 12:36:07 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 12:36:14 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 12:48:01 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[07-Aug-2023 13:05:02 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 13:20:28 UTC] PHP Warning:  Attempt to read property "title" on null in C:\laragon\www\wpproject\wp-includes\class-wp-customize-widgets.php on line 905
+[07-Aug-2023 13:33:22 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 13:34:32 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 13:48:11 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:48:38 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:48:48 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:49:11 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:50:13 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:50:28 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:50:34 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:50:53 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:51:17 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 13:51:40 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\laragon\www\wpproject\wp-includes\update.php on line 447
+[07-Aug-2023 13:57:03 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:09 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:13 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:17 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:34 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:34 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:52 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:52 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:57 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:57:57 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:00 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:00 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:04 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:04 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:09 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:09 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:13 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:13 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:19 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:19 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:24 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:24 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:33 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:33 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 13:58:38 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[07-Aug-2023 14:06:11 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 14:06:30 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 14:06:38 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 14:06:53 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 15:23:34 UTC] PHP Warning:  Undefined array key "echo" in C:\laragon\www\wpproject\wp-includes\general-template.php on line 363
+[07-Aug-2023 15:23:43 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 15:24:01 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 15:24:35 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 15:24:51 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[07-Aug-2023 15:26:37 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in C:\laragon\www\wpproject\wp-admin\includes\update.php on line 172
+[07-Aug-2023 16:02:27 UTC] PHP Deprecated:  Constant FILTER_SANITIZE_STRING is deprecated in C:\laragon\www\wpproject\wp-content\plugins\wp-rest-api-controller\admin\class-wp-rest-api-controller-admin.php on line 123
+[10-Aug-2023 13:46:35 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\laragon\www\wpproject\wp-admin\includes\class-wp-filesystem-direct.php on line 309
+[10-Aug-2023 14:06:43 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:06:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:06:46 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:06:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:06:51 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:06:51 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:06:53 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:07:07 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:07:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:07:08 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:07:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:07:08 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:07:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:07:11 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:07:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:11:26 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:11:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:11:29 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:11:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:11:30 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:11:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:11:31 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:11:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:12:13 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 33
+[10-Aug-2023 14:14:02 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:14:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:14:38 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader1, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:14:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:15:24 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:15:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:16:54 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:16:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:18:09 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:18:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:18:11 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:18:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:18:12 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:18:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:18:13 UTC] PHP Fatal error:  Cannot declare class WP_Metadata_Lazyloader, because the name is already in use in C:\laragon\www\wpproject\wp-includes\class-wp-metadata-lazyloader.php on line 32
+[10-Aug-2023 14:18:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function set() on null in C:\laragon\www\wpproject\wp-includes\l10n.php:806
+Stack trace:
+#0 C:\laragon\www\wpproject\wp-includes\l10n.php(900): load_textdomain('default', 'C:\\laragon\\www\\...', 'fr_FR')
+#1 C:\laragon\www\wpproject\wp-includes\class-wp-fatal-error-handler.php(47): load_default_textdomain()
+#2 [internal function]: WP_Fatal_Error_Handler->handle()
+#3 {main}
+  thrown in C:\laragon\www\wpproject\wp-includes\l10n.php on line 806
+[10-Aug-2023 14:26:00 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 4415
+[10-Aug-2023 15:06:50 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:51 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:55 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:57 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:06:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:07:12 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:07:13 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:07:16 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:07:20 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:08:06 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 15:09:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\laragon\www\wpproject\wp-includes\class-wpdb.php on line 2019
+[10-Aug-2023 17:15:08 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_timeout_arrowpress_customizer_googlefonts_cache' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, WP_REST_Widget_Types_Controller->render, WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe, wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, ArrowTheme\Customizer\Modules\Css->print_styles_inline, ArrowTheme\Customizer\Modules\Css->print_styles, ArrowTheme\Customizer\Modules\Css::loop_controls, ArrowTheme\Customizer\Modules\CSS\Generator::get_instance, ArrowTheme\Customizer\Modules\CSS\Generator->__construct, ArrowTheme\Customizer\Utils\GoogleFonts->get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
+[10-Aug-2023 17:15:08 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_timeout_arrowpress_customizer_googlefonts_cache' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, WP_REST_Widget_Types_Controller->render, WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe, wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, ArrowTheme\Customizer\Modules\Css->print_styles_inline, ArrowTheme\Customizer\Modules\Css->print_styles, ArrowTheme\Customizer\Modules\Css::loop_controls, ArrowTheme\Customizer\Modules\CSS\Generator::get_instance, ArrowTheme\Customizer\Modules\CSS\Generator->__construct, ArrowTheme\Customizer\Utils\GoogleFonts->get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
+[10-Aug-2023 17:15:08 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_timeout_arrowpress_customizer_googlefonts_cache' made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, WP_REST_Widget_Types_Controller->render, WP_REST_Widget_Types_Controller->render_legacy_widget_preview_iframe, wp_head, do_action('wp_head'), WP_Hook->do_action, WP_Hook->apply_filters, ArrowTheme\Customizer\Modules\Css->print_styles_inline, ArrowTheme\Customizer\Modules\Css->print_styles, ArrowTheme\Customizer\Modules\Css::loop_controls, ArrowTheme\Customizer\Modules\CSS\Generator::get_instance, ArrowTheme\Customizer\Modules\CSS\Generator->__construct, ArrowTheme\Customizer\Utils\GoogleFonts->get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
+[10-Aug-2023 17:15:31 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 33
+[10-Aug-2023 17:15:31 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2473
+[10-Aug-2023 17:15:32 UTC] PHP Warning:  Undefined array key "title" in C:\laragon\www\wpproject\wp-content\themes\aquila\inc\classes\class-clock-widget.php on line 33
+[10-Aug-2023 17:15:32 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\laragon\www\wpproject\wp-includes\formatting.php on line 2473

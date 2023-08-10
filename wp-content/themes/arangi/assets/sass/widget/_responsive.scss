@@ -1,0 +1,107 @@
+@media (min-width: 1200px){
+    .apr-banner.bn-align-bottom-center {
+        .bn-content {
+            top: auto;
+            transform: none;
+            bottom: 138px;
+
+            .btn-bn {
+                margin-#{$right}: 1px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .heading-modern.heading-1 {
+        p.heading-title {
+            font-size: 35px;
+        }
+        span.after-title{
+            font-size: 65px;
+            margin: -45px 0 0;
+            line-height: 45px;
+            min-height: 45px;
+        }
+    }
+    .element-banner .banner-mid > span.discount-tag {
+        font-size: 45px;
+    }
+
+    .apr-banner.bn-align-right .bn-content {
+        text-align: center;
+        .bn-desc{
+            margin-#{$left}: auto;
+            margin-#{$right}: auto;
+        }
+    }
+    .heading-modern p.desc{
+        font-size: 16px;
+        margin-top: 22px;
+    }
+}
+@media (max-width: 991px) {
+    .heading-modern.heading-1 .after-title{
+        display: none;
+    }
+    .arangi-countdown .countdown-section {
+        width: 50px;
+        height: 50px;
+        .countdown-number {
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 7px;
+        }
+    }
+    .element-banner {
+        &.bn-type-3{
+            img{
+                min-height: 145px;
+            }
+            .banner-mid{
+                #{$left}: 30px;
+            }
+        }
+        .banner-mid {
+            .banner-title {
+                font-size: 20px;
+            }
+            .bn-desc {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+     .heading-modern p.desc{
+        margin-top: 20px;
+     }
+    .element-banner .banner-mid .banner-shortcode {
+        margin-bottom: 10px;
+    }
+    .heading-modern.heading-1 p.heading-title,
+    .heading-modern.heading-2 p.heading-title{
+        font-size: 30px;
+    }
+    .heading-modern.heading-2 p.heading-title{
+        letter-spacing: 0;
+    }
+    .heading-modern.heading-1 p.heading-title{
+        letter-spacing: 0;
+        &:before{
+            bottom: 3px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .heading-modern{
+        &.heading-1 {
+            span.after-title{
+                font-size: 40px;
+                margin-top: -45px;
+            }
+        }
+        &.heading-2 h2 {
+            font-size: 48px;
+        }
+    }
+}

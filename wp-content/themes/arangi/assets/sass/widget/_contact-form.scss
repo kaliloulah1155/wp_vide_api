@@ -1,0 +1,180 @@
+
+.apr-cf7{
+    label{
+        width: 100%;
+    } input[type="submit"]{
+        display: block;
+    }
+    .form-name {
+        margin-bottom: 21px;
+        letter-spacing: 0.025em;
+        img{
+            margin-#{$left}: 2px;
+            margin-top: -6px;
+        }
+    }
+    .form-info {
+        margin-bottom: 41px;
+        font-size: 15px;
+    }
+}
+.wpcf7-form {
+    p{
+        margin-bottom: 15px;
+        position: relative;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        input::placeholder{
+            opacity: 1 !important;
+        }
+        textarea::placeholder{
+            opacity: 1 !important;
+        }
+        input, select{
+            height: 54px;
+        }
+    }
+    textarea {
+        padding: 14px 20px;
+    }
+}
+.wpcf7-form-control{
+    &.wpcf7-textarea {
+        height: 150px;
+    }
+    &.wpcf7-submit {
+        margin-top: 30px;
+        padding: 17px 40px;
+    }
+}
+.apr-cf7-button-center{
+    input[type="submit"]{
+        margin: auto;
+    }
+}
+.apr-cf7-button-right{
+    input[type="submit"]{
+        margin-#{$left}: auto;
+    }
+}
+.apr-cf7-button-justify{
+    input[type="submit"]{
+        width: 100%;
+    }
+}
+div.wpcf7 .ajax-loader {
+    #{$right}: 15px;
+    top: 50%;
+    position: absolute;
+    @include transform(translateY(-50%));
+}
+span.wpcf7-not-valid-tip {
+    font-size: 12px;
+}
+.elementor-widget.toggle-contact {
+    position: absolute;
+    background: $primary_color;
+    width: 63px !important;
+    height: 63px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    top: 6px;
+    cursor: pointer;
+    z-index: 2;
+    #{$left}: -102px; 
+    .elementor-icon{
+        vertical-align: middle;
+    }
+}
+.toggle-contact.active + .elementor-widget-Apr_Contact_Form {
+    opacity: 0;
+    visibility: hidden;
+}
+.humburger-content.contact-info.active {
+    opacity: 1;
+    visibility: visible;
+}
+.toggle-contact.active i:before{
+    content: "\e622";
+}
+.humburger-content.contact-info {
+    padding: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    &:active{
+        opacity: 1;
+    }
+    h5{
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.025em;
+        margin-bottom: 13px;
+        display: inline-block;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            #{$left}: calc(100% + 9px);
+            top: 0;
+            width: 30px;
+            height: 28px;
+            background: url('../images/img-contact.png') no-repeat; 
+        }
+    }
+    p{
+        margin-bottom: 35px;
+        font-size: 15px;
+    }
+    ul.list-info-contact li {
+        padding-bottom: 23px;
+        font-size: 15px;
+        a{
+            font-size: 15px;
+        }
+    }
+}
+.elementor-widget.elementor-widget-Apr_Contact_Form:not(:last-child) {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px){
+    .elementor-widget.toggle-contact {
+        width: 40px !important;
+        height: 40px;
+        text-align: center;
+        line-height: 38px;
+        #{$left}: -50px;
+    }
+    .elementor-widget.toggle-contact .elementor-icon {
+        font-size: 18px !important;
+    }
+    .elementor-widget.toggle-contact {
+        #{$left}: -48px; 
+    }
+}
+@media (max-width: 767px){
+    .elementor-widget.toggle-contact {
+        #{$left}: -30px;
+        top: -55px;
+    }
+    .humburger-content.contact-info h5 {
+        font-size: 22px;
+    }
+    div.wpcf7-validation-errors, 
+    div.wpcf7-acceptance-missing {
+        margin-bottom: 50px;
+    }
+    .elementor-widget.elementor-widget-Apr_Contact_Form:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .apr-cf7 .form-info,
+    .humburger-content.contact-info p {
+        margin-bottom: 20px;
+    }
+    .wpcf7-form-control.wpcf7-textarea {
+        height: 100px;
+    }
+}
