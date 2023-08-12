@@ -34,8 +34,18 @@ class Assets{
 		wp_enqueue_style('bootstrap-css');
 	}
 	public function register_scripts(){
+
+
 		//Register Script
-		wp_register_script('main-js',AQUILA_DIR_URI.'/assets/main.js',[],filemtime(AQUILA_DIR_PATH.'/assets/main.js'),true);
+ 		$jsFilePath = AQUILA_BUILD_JS_DIR_PATH . '/main.js';
+		if (file_exists($jsFilePath)) {
+			$modificationTime = filemtime($jsFilePath);
+			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', [], $modificationTime, true);
+		} else {
+			// Handle the case when the script file doesn't exist
+			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', [], null, true);
+		}
+
 		wp_register_script('bootstrap-js',AQUILA_DIR_URI.'/assets/src/library/js/bootstrap.js',['jquery'],false,true);
 
 		//Enqueue Scripts
