@@ -26,12 +26,25 @@ class Assets{
 
 	public function register_styles(){
 		//Register Styles
-		wp_register_style('style-css',get_stylesheet_uri(),[],filemtime(AQUILA_DIR_PATH.'/style.css'),'all');
+        //Debut configuration de main.css
+		$cssFilePath = AQUILA_BUILD_CSS_DIR_PATH . '/main.css';
+		if (file_exists($cssFilePath)) {
+			$modificationTime_css = filemtime($cssFilePath);
+			wp_register_style('main-css', AQUILA_BUILD_JS_URI . '/main.css', ['bootstrap-css'], $modificationTime_css, 'all');
+		} else {
+			// Handle the case when the script file doesn't exist
+			wp_register_style('main-css', AQUILA_BUILD_CSS_URI . '/main.css', ['bootstrap-css'], null, 'all');
+		}
+		//Fin configuration de main.css
+
+
 		wp_register_style('bootstrap-css',AQUILA_DIR_URI.'/assets/src/library/css/bootstrap.css',[],false,'all');
 
 		//Enqueue Styles
-		wp_enqueue_style('style-css');
 		wp_enqueue_style('bootstrap-css');
+		wp_enqueue_style('main-css');
+
+
 	}
 	public function register_scripts(){
 

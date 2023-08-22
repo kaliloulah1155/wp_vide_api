@@ -4,16 +4,19 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const cssnano = require('cssnano');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+const CopyPlugin = require('copy-webpack-plugin');
 
 // Directory paths
 const JS_DIR = path.resolve(__dirname, 'assets/src/js');
-const IMG_DIR = path.resolve(__dirname, 'src/img');    // attention les images vont dans assets/src/img
+const IMG_DIR = path.resolve(__dirname, 'assets/src/img');    // attention les images vont dans assets/src/img
 const BUILD_DIR = path.resolve(__dirname, 'assets/build');
+const LIB_DIR = path.resolve(__dirname, 'assets/src/library');
+
 
 const entry = {
 	main: [path.join(JS_DIR, 'main.js')],
-	single:path.join(JS_DIR, 'single.js')
+	single:path.join(JS_DIR, 'single.js'),
+	editor:path.join(JS_DIR, 'editor.js'),
 };
 
 const output = {
@@ -30,6 +33,11 @@ const plugins = (argv) => [
 	new MiniCssExtractPlugin({
 		filename: 'css/[name].css',
 	}),
+	new CopyPlugin({
+		patterns: [
+			{ from: LIB_DIR,to:BUILD_DIR+'/library' }
+			],
+	}),
 ];
 
 const rules = [
@@ -42,7 +50,13 @@ const rules = [
 	{
 		test: /\.scss$/,
 		exclude: /node_modules/,
-		use: [MiniCssExtractPlugin.loader, 'css-loader'],
+		use: [
+			MiniCssExtractPlugin.loader,
+ 			'css-loader',   // Convert CSS into CommonJS
+			'sass-loader'   // Compile Sass to CSS
+		],
+
+
 	},
 	{
 		test: /\.(png|jpg|svg|jpeg|gif|ico)$/,

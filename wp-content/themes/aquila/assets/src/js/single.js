@@ -1,1 +1,1 @@
-console.log('ok');
+import '../sass/single.scss';

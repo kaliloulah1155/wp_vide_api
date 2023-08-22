@@ -13,28 +13,30 @@ class AQUILA_THEME{
 
 	protected function __construct()
 	{
-
 		//load class
 		Assets::get_instance();
 		Menus::get_instance();
 		Meta_Boxes::get_instance();
 		Sidebars::get_instance();
+		Block_Patterns::get_instance();
 
 		$this->setup_hooks();
 	}
+
 	protected function setup_hooks(){
 		/*
 		 * Actions
 		 */
-
          add_action('after_setup_theme',[$this,'setup_theme']);
-
+         add_action('after_setup_theme', [$this,'remove_default_block_patterns']);
 
 	}
 
+	function remove_default_block_patterns() {
+		remove_theme_support('core-block-patterns');
+	}
+
 	public function setup_theme(){
-
-
 
 		add_theme_support('title-tag');
 		add_theme_support('custom-logo',[
@@ -65,9 +67,13 @@ class AQUILA_THEME{
 			'script',
 			'style'
 		]);
-		add_editor_style();
+
 		add_theme_support('wp-block-styles');
 		add_theme_support('align-wide');
+        add_theme_support('editor-styles');
+
+        //style personnaliser de gutenborg
+		add_editor_style('assets/build/css/editor.css');
 
 
 		global $content_width;
@@ -75,6 +81,8 @@ class AQUILA_THEME{
 			$content_width=1240;
 		}
 	}
+
+
 
 }
 

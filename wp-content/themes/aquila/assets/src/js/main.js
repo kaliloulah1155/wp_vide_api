@@ -1,8 +1,10 @@
-import './clock'
+import './clock';
 
+//Styles
+import '../sass/main.scss';
 
 //Images
-import '../img/cat.jpg'
+import '../img/cat.jpg';
 
 
 

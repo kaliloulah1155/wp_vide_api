@@ -51,6 +51,17 @@ function aquila_get_theme_instance(){
 }
 aquila_get_theme_instance();
 
+//Le style for wordpress block remove style and script
+/*
+function ebayads_remove_block_styles(){
+	wp_dequeue_style('wp-block-library');
+	wp_dequeue_style('wp-block-library-theme');
+	wp_dequeue_style('wc-block-style'); //remove woocommerce block css
+}
+
+add_action('wp_enqueue_scripts','ebayads_remove_block_styles',100); */
+
+//Remove the core block patterns
 
 ?>
 

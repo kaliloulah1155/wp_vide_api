@@ -91,7 +91,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("C:\\laragon\\www\\wpproject\\wp-content\\themes\\aquila\\src\\img/assets/src/img/cat.jpg");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../assets/src/img/cat.jpg");
+
+/***/ }),
+
+/***/ "./assets/src/sass/main.scss":
+/*!***********************************!*\
+  !*** ./assets/src/sass/main.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -173,7 +186,11 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clock */ "./assets/src/js/clock/index.js");
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_cat_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/cat.jpg */ "./assets/src/img/cat.jpg");
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./assets/src/sass/main.scss");
+/* harmony import */ var _img_cat_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/cat.jpg */ "./assets/src/img/cat.jpg");
+
+
+//Styles
 
 
 //Images
