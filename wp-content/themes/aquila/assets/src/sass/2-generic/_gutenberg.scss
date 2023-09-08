@@ -1,0 +1,23 @@
+.home-page-wrap{
+	.entry-content{
+		&>*{
+			//margin: $margin-top auto $margin-bottom auto;
+			margin-bottom: $margin-bottom;
+		}
+
+		&>*:not(.alignfull){
+			//margin-bottom: 1rem;
+			//max-width: $site_width;
+			padding: 0 $padding-right 0 $padding-left;
+			margin: 0 $margin-left 0 $margin-right;  // Add left and right margins
+
+			@media screen and (max-width: 768px) {
+				margin: 0 $margin-left-mobile 0 $margin-right-mobile; // Adjust mobile margins
+			}
+
+		}
+		&> .alignfull{
+			max-width:$wide_width;
+		}
+	}
+}
