@@ -19,7 +19,7 @@ const entry = {
 	main: [path.join(JS_DIR, 'main.js')],
 	single:path.join(JS_DIR, 'single.js'),
 	editor:path.join(JS_DIR, 'editor.js'),
-	blocks:path.join(JS_DIR, 'editor.js'),
+	blocks:path.join(JS_DIR, 'blocks.js'),
 };
 
 const output = {
