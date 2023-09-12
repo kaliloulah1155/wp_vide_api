@@ -69,6 +69,9 @@ add_action('wp_enqueue_scripts','ebayads_remove_block_styles',100); */
 
 //Remove the core block patterns
 
+
+ 
+
 ?>
 
 

@@ -1,11 +1,11 @@
-.home-page-wrap{
-	.entry-content{
-		&>*{
+.home-page-wrap {
+	.entry-content {
+		& > * {
 			//margin: $margin-top auto $margin-bottom auto;
 			margin-bottom: $margin-bottom;
 		}
 
-		&>*:not(.alignfull){
+		& > *:not(.alignfull) {
 			//margin-bottom: 1rem;
 			//max-width: $site_width;
 			padding: 0 $padding-right 0 $padding-left;
@@ -16,8 +16,8 @@
 			}
 
 		}
-		&> .alignfull{
-			max-width:$wide_width;
+		& > .alignfull {
+			max-width: $wide_width;
 		}
 	}
 }

@@ -10,3 +10,8 @@ npm i node-sass sass-loader sass-mq -D --force
 npm i @wordpress/base-styles @wordpress/block-editor @wordpress/blocks @wordpress/components @wordpress/data @wordpress/element @wordpress/hooks @wordpress/i18n @wordpress/icons @wordpress/server-side-render @wordpress/dependency-extraction-webpack-plugin @wordpress/eslint-plugin lodash -D --force
 
 npm i @svgr/cli --force
+
+npm i eslint eslint-loader eslint-plugin-jsdoc -D --force
+npm install --save-dev eslint-plugin-prettier@5.0.0 --force
+
+npm i stylelint stylelint-config-wordpress stylelint-webpack-plugin -D --force

@@ -9,7 +9,13 @@
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
-    "clean": "rm -rf build/*"
+    "clean": "rm -rf build/*",
+    "svg": "svgr -d assets/src/js/icons assets/src/icons",
+    "lint": "eslint assets/src/js/*",
+    "lint:fix": "eslint --fix assets/src/js/*",
+    "lint-css": "stylelint assets/src/sass/**/*.scss",
+    "lint-css:fix": "npm run lint-css -- --fix",
+    "precommit":"npm run lint-css:fix && npm run lint:fix && npm run build"
   },
   "dependencies": {
     "@svgr/cli": "^8.1.0",
@@ -40,6 +46,10 @@
     "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
+    "eslint": "^8.49.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-jsdoc": "^46.6.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "file-loader": "^6.2.0",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.7.6",
@@ -49,6 +59,9 @@
     "sass-loader": "^13.3.2",
     "sass-mq": "^6.0.0",
     "style-loader": "^3.3.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-wordpress": "^17.0.0",
+    "stylelint-webpack-plugin": "^4.1.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.2",

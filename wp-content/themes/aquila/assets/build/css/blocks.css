@@ -1,4 +1,20 @@
 /*!**********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/src/sass/blocks.scss ***!
   \**********************************************************************************************************************/
+.aquila-icon-heading {
+  display: flex;
+}
+.aquila-icon-heading .aquila-icon-heading__heading {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
 
+/* stylelint-disable */
+.aquila-dos-and-donts .aquila-dos-and-donts__list {
+  margin-left: 20px;
+}
+
+/* stylelint-enable */
+
+/*# sourceMappingURL=blocks.css.map*/
