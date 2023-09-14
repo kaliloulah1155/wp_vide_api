@@ -42,9 +42,14 @@ class Assets{
 
 
 		wp_register_style('bootstrap-css',AQUILA_DIR_URI.'/assets/src/library/css/bootstrap.css',[],false,'all');
+		wp_register_style('slick-css', AQUILA_BUILD_LIB_URI . '/css/slick.css', [], false, 'all');
+       wp_register_style('slick-theme-css', AQUILA_BUILD_LIB_URI . '/css/slick-theme.css', ['slick-css'], false, 'all');
+
 
 		//Enqueue Styles
 		wp_enqueue_style('bootstrap-css');
+		wp_enqueue_style('slick-css');
+       wp_enqueue_style('slick-theme-css');
 		wp_enqueue_style('main-css');
 
 
@@ -56,17 +61,21 @@ class Assets{
  		$jsFilePath = AQUILA_BUILD_JS_DIR_PATH . '/main.js';
 		if (file_exists($jsFilePath)) {
 			$modificationTime = filemtime($jsFilePath);
-			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', [], $modificationTime, true);
+			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', ['jquery','slick-js'], $modificationTime, true);
 		} else {
 			// Handle the case when the script file doesn't exist
-			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', [], null, true);
+			wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', ['jquery','slick-js'], null, true);
 		}
 
 		wp_register_script('bootstrap-js',AQUILA_DIR_URI.'/assets/src/library/js/bootstrap.js',['jquery'],false,true);
+		wp_register_script('slick-js', AQUILA_BUILD_LIB_URI . '/js/slick.min.js', ['jquery'], false, true);
+
 
 		//Enqueue Scripts
 		wp_enqueue_script('main-js');
 		wp_enqueue_script('bootstrap-js');
+		wp_enqueue_script('slick-js');
+
 	}
 
 	public function enqueue_editor_assets() {

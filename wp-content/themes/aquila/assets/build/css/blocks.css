@@ -1,6 +1,24 @@
 /*!**********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/src/sass/blocks.scss ***!
   \**********************************************************************************************************************/
+/*---------------------------------
+		Colors Variables
+-----------------------------------*/
+/*---------------------------------
+		Colors Variables
+-----------------------------------*/
+/*---------------------------------
+		Opacity
+-----------------------------------*/
+/*---------------------------------
+		Gradient
+-----------------------------------*/
+/*---------------------------------
+		Element Colors
+-----------------------------------*/
+/*---------------------------------
+		Border Colors
+-----------------------------------*/
 .aquila-icon-heading {
   display: flex;
 }
@@ -13,6 +31,35 @@
 /* stylelint-disable */
 .aquila-dos-and-donts .aquila-dos-and-donts__list {
   margin-left: 20px;
+}
+
+/* stylelint-enable */
+/* stylelint-disable */
+.editor-styles-wrapper .wp-block-button.is-style-layout-border-blue-fill .wp-block-button__link,
+.wp-block-button.is-style-layout-border-blue-fill .wp-block-button__link {
+  border: 1px solid #0673a9;
+  background-color: #38affd !important;
+  color: #fff !important;
+  padding: 8px 30px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.editor-styles-wrapper .wp-block-button.is-style-layout-border-white-no-fill .wp-block-button__link,
+.wp-block-button.is-style-layout-border-white-no-fill .wp-block-button__link {
+  border: 1px solid #fff;
+  background-color: transparent !important;
+  color: #fff !important;
+  padding: 8px 30px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/* stylelint-enable */
+/* stylelint-disable */
+.editor-styles-wrapper .wp-block-quote.is-style-layout-dark-background,
+.wp-block-quote.is-style-layout-dark-background {
+  background-color: #38affd;
+  padding: 24px 18px;
 }
 
 /* stylelint-enable */

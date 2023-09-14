@@ -978,6 +978,49 @@ object {
   max-width: 1527px;
 }
 
+.home-page-wrap .entry-content > * {
+  margin-bottom: 40px;
+}
+.home-page-wrap .entry-content > *:not(.alignfull) {
+  padding: 0 15px 0 15px;
+  margin: 0 10rem 0 10rem;
+}
+@media screen and (max-width: 768px) {
+  .home-page-wrap .entry-content > *:not(.alignfull) {
+    margin: 0 2rem 0 2rem;
+  }
+}
+.home-page-wrap .entry-content > .alignfull {
+  max-width: 1527px;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.slick-slider {
+  margin: 0 -15px;
+}
+
+.slick-slide {
+  padding: 10px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 30px;
+}
+
 /* Entry meta */
 .updated:not(.published) {
   display: none;

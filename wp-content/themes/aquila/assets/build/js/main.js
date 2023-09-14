@@ -1,6 +1,63 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./assets/src/js/carousel/index.js":
+/*!*****************************************!*\
+  !*** ./assets/src/js/carousel/index.js ***!
+  \*****************************************/
+/***/ (() => {
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+(function ($) {
+  var SlickCarousel = /*#__PURE__*/function () {
+    function SlickCarousel() {
+      _classCallCheck(this, SlickCarousel);
+      this.initiateCarousel();
+    }
+    _createClass(SlickCarousel, [{
+      key: "initiateCarousel",
+      value: function initiateCarousel() {
+        $('.posts-carousel').slick({
+          autoplay: true,
+          autoplaySpeed: 1000,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }, {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
+        });
+      }
+    }]);
+    return SlickCarousel;
+  }();
+  new SlickCarousel();
+})(jQuery);
+
+/***/ }),
+
 /***/ "./assets/src/js/clock/index.js":
 /*!**************************************!*\
   !*** ./assets/src/js/clock/index.js ***!
@@ -201,9 +258,11 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clock */ "./assets/src/js/clock/index.js");
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./assets/src/sass/main.scss");
-/* harmony import */ var _img_cat_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/cat.jpg */ "./assets/src/img/cat.jpg");
-/* harmony import */ var _img_patterns_cover_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/patterns/cover.jpg */ "./assets/src/img/patterns/cover.jpg");
+/* harmony import */ var _carousel_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./carousel/index */ "./assets/src/js/carousel/index.js");
+/* harmony import */ var _carousel_index__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_carousel_index__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sass/main.scss */ "./assets/src/sass/main.scss");
+/* harmony import */ var _img_cat_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/cat.jpg */ "./assets/src/img/cat.jpg");
+/* harmony import */ var _img_patterns_cover_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/patterns/cover.jpg */ "./assets/src/img/patterns/cover.jpg");
 
 
 //Styles

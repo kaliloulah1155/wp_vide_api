@@ -1,5 +1,5 @@
 import './clock';
-
+import './carousel/index';
 //Styles
 import '../sass/main.scss';
 
