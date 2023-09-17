@@ -15,3 +15,6 @@ npm i eslint eslint-loader eslint-plugin-jsdoc -D --force
 npm install --save-dev eslint-plugin-prettier@5.0.0 --force
 
 npm i stylelint stylelint-config-wordpress stylelint-webpack-plugin -D --force
+
+
+https://www.wp-hasty.com/

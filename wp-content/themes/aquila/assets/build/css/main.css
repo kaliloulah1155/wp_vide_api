@@ -1021,6 +1021,25 @@ object {
   font-size: 30px;
 }
 
+@media (min-width: 48em) {
+  .search-card-container {
+    display: flex;
+  }
+}
+.search-card-container .search-card-content {
+  margin-top: 16px;
+}
+@media (min-width: 48em) {
+  .search-card-container .search-card-content {
+    margin-top: 0;
+  }
+}
+@media (min-width: 48em) {
+  .search-card-container .search-card-thumbnail {
+    margin-right: 16px;
+  }
+}
+
 /* Entry meta */
 .updated:not(.published) {
   display: none;

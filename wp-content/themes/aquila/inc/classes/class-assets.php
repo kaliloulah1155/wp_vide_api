@@ -69,12 +69,27 @@ class Assets{
 
 		wp_register_script('bootstrap-js',AQUILA_DIR_URI.'/assets/src/library/js/bootstrap.js',['jquery'],false,true);
 		wp_register_script('slick-js', AQUILA_BUILD_LIB_URI . '/js/slick.min.js', ['jquery'], false, true);
+		wp_register_script('single-js', AQUILA_BUILD_JS_URI . '/single.js', ['jquery', 'slick-js'], filemtime(dirname(__FILE__, 3) . '/assets/build/js/single.js'), true);
+
+	 
+
 
 
 		//Enqueue Scripts
 		wp_enqueue_script('main-js');
 		wp_enqueue_script('bootstrap-js');
 		wp_enqueue_script('slick-js');
+
+		if(is_single()){
+			wp_enqueue_script('single-js');
+
+		}
+ 
+
+		wp_localize_script('main-js','siteConfig',[
+			'ajaxUrl'=>admin_url('admin-ajax.php'),
+			'ajax_nonce'=>wp_create_nonce('loadmore_post_nonce')
+		]);
 
 	}
 

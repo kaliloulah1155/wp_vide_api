@@ -12,6 +12,8 @@
  * @package Aquila
  */
 
+
+ 
 get_header();
 ?>
 	<div id="primary" >
@@ -50,6 +52,9 @@ get_header();
 						else:
 							get_template_part('template-parts/content-none');
 						endif;
+						// For Single Post loadmore button, uncomment this code and comment next and prev link code below.
+                            echo do_shortcode( '[single_post_listings]' )
+
 						?>
 						<!-- Next and previous link for page navigation-->
 						<div class="prev-link"><?php previous_post_link(); ?></div>
